@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<!--
+	Urban by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Generic - Urban by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo">PageRank Project</a></div>
+				<a href="#menu">Menu</a>
+			</header>
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="http://yifanyu.me/">Home</a></li>
+				</ul>
+			</nav>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Section -->
+					<section class="wrapper">
+						<div class="inner">
+							<header class="align-center">
+								<h2>Convergence properties and sensitivity of the PageRank problem</h2>
+								<p><font color="navy">supervised by Professor Tisseur</font></p>
+								<a href="http://yifanyu.me/report%20yifan.pdf" class="button">Read the report</a>
+								<a href="https://github.com/yifan0330/PageRank-Algorithm" class="button">View code on Github</a>
+							</header>
+							<div class="flex flex-2">
+								<div class="col col2">
+									<h3><font color="black">Brief Introduction</font></h3><html>
+									<head>
+										<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+										<script type="text/javascript">
+										LatexIT.add('p',true);
+										</script>
+									</head>
+									<body>
+										<p><font color="slategray">PageRank vector is defined as the stationary state of the Markov chain by perturbing the transition matrix G with a uniform teleportation parameter $α$, where α ∈ (0, 1) represents the proportion of time that a random surfer follows the hyperlinks rather than teleports to an arbitrary new webpage and α is commonly chosen to be 0.85. The Google matrix G is primitive, irreducible and stochastic, therefore, the unique stationary probability distribution vector $\pi^{T}$ exists.</font></p>
+										<div lang="latex">\pi^{T}=\pi^{T}G</div><ul>
+										</ul>
+										<p>It can be viewed as an eigenvalue problem: PageRank vector $\pi^{T}$ is the dominant eigenvector of G with eigenvalue 1 (algebraic multiplicity 1).</p>
+									</body>
+									</html>
+									<h3><font color="black">Numerical Experiment</font></h3>
+
+
+									
+								</div>
+								<div class="col col1 first">
+									<div class="image round fit">
+										<a href="generic.html" class="link"><img src="images/pic09.jpg" alt="" /></a>
+									</div>
+								</div>
+
+								<p>Although the size of Google matrix G is extremely large (8.1 billion in 2006), the web structure invloved in all the numerical experiments in my research is composed of 2657 Wikipedia pages and 5920 hyperlinks (starting from the Wikipedia page ”PageRank” and the hyperlinks within 4 levels are crawled).</p>
+
+								<h3><font color="black">Conclusion</font></h3>
+
+								<p>The first emphasis of this report is the comparison of numerical methods in computing the PageRank vector $\pi^{T}$ . The power method is the most efficient method if compared in computing time, while the power method and Gauss-Seidel method have similar rates of convergence, sightly better than Jacobi’s method. The SOR method is convergent for the PageRank problem if the relaxation parameter $\omega \in (0, \frac{2}{1+\alpha})$, and it is deduced that the optimal ω is approximate 1 and it is also confirmed in the experiment. Furthermore, two Krylov methods (GMRES and BICGSTAB) are equivalently efficient in computing $\pi^{T}$, however, they are infeasible in the real web structure because of storage issues.</p>
+
+								<p>The sensitivity of teleportation parameter α is also researched with analysis of derivative of $\pi^{T}$ and perturbation method. The explicit formulae of the derivative of $\pi^{T}$ are given,and the bounds of both derivative of $\pi^{T}$ in 1−norm and each component are derived. Furthermore, the exact formula and approximation of higher derivatives of $\pi^{T}$ are also presented. It is obvious that as α approaching 1, the PageRank vector tends to be more sensitive to small perturbation in the web structure. When comparing the top 10 Wikipedia pages with highest PageRank scores as α varies, larger α leads to Wikipedia pages more relevant to the topic PageRank, and the differences in PageRank scores are more significant.</p>
+							</div>
+		
+						</div>
+					</section>
+			
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/yifan-yu-b26005135/" class="icon fa-linkedin"><span class="label"> Linkedin</span></a></li>
+						<li><a href="https://github.com/yifan0330" class="icon fa-github"><span class="label"> Github</span></a></li>
+						<li><a href="https://www.facebook.com/yifan.yu.773" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					</ul>
+					<p>&copy; Yifan Yu 2018. All rights reserved. </p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
