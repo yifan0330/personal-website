@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Urban by TEMPLATED</title>
+		<title>PageRank project</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -64,6 +64,7 @@
 									</div>
 								</div>
 
+								<div class="col col3">
 								<p>Although the size of Google matrix G is extremely large (8.1 billion in 2006), the web structure invloved in all the numerical experiments in my research is composed of 2657 Wikipedia pages and 5920 hyperlinks (starting from the Wikipedia page ”PageRank” and the hyperlinks within 4 levels are crawled).</p>
 
 								<h3><font color="black">Conclusion</font></h3>
@@ -71,6 +72,7 @@
 								<p>The first emphasis of this report is the comparison of numerical methods in computing the PageRank vector $\pi^{T}$ . The power method is the most efficient method if compared in computing time, while the power method and Gauss-Seidel method have similar rates of convergence, sightly better than Jacobi’s method. The SOR method is convergent for the PageRank problem if the relaxation parameter $\omega \in (0, \frac{2}{1+\alpha})$, and it is deduced that the optimal ω is approximate 1 and it is also confirmed in the experiment. Furthermore, two Krylov methods (GMRES and BICGSTAB) are equivalently efficient in computing $\pi^{T}$, however, they are infeasible in the real web structure because of storage issues.</p>
 
 								<p>The sensitivity of teleportation parameter α is also researched with analysis of derivative of $\pi^{T}$ and perturbation method. The explicit formulae of the derivative of $\pi^{T}$ are given,and the bounds of both derivative of $\pi^{T}$ in 1−norm and each component are derived. Furthermore, the exact formula and approximation of higher derivatives of $\pi^{T}$ are also presented. It is obvious that as α approaching 1, the PageRank vector tends to be more sensitive to small perturbation in the web structure. When comparing the top 10 Wikipedia pages with highest PageRank scores as α varies, larger α leads to Wikipedia pages more relevant to the topic PageRank, and the differences in PageRank scores are more significant.</p>
+							</div>
 							</div>
 		
 						</div>
